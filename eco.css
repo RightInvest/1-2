@@ -1,0 +1,853 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #333;
+}
+
+*,
+*: before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    margin: 0;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+
+    border: 0;
+    background-color: #0a0707;
+}
+
+ /* Container */
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding-top: 3px;
+    width: 100%;
+    height: 53px;
+    background: rgb(4 4 4 / 61%);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header_logo {
+    font-size: 43px;
+    font-weight: 700;
+    color:white;
+    padding-left: 15px;
+}
+
+.header_logo2 {
+    font-size: 39px;
+    color:white;
+}
+
+.header_inside {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+/* Nav */
+
+.nav {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-right: 20px;
+    height: 35px;
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+
+    color: #e6d3d3;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    display: none;
+    background-color: blue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav_link:hover {
+    color: blue;
+
+}
+
+.nav_link: {
+    color: transparent;
+}
+
+.nav_link:hover:after {
+    display: block;
+}
+
+li {
+    float: right;
+     list-style:none;
+}
+
+/* Lang */
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li {
+    float: right;
+    width: 50px;
+    height: 38px;
+    background-color: transparent;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li a {
+    display: block;
+    line-height: .5;
+}
+
+ul li ul li {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.30);
+    padding: 2px;
+}
+
+ul li:hover ul li {
+    display: block;
+}
+
+.translate {
+    background: transparent;
+    border: none;
+}
+
+.lang {
+    width: 30px;
+    height: 30px;
+}
+
+.lang_img{
+    width: 40px;
+    height: 30px;
+}
+
+.lang_img:hover {
+    width: 42px;
+    height: 32px;
+}
+
+
+/* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url(images/backgrounds/eco.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro_inside {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding-top: 120px;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 2px 2px 25px blue;
+}
+
+.intro_title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.intro_title2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.intro_title3 {
+    font-size: 34px;
+    margin-top: 30px;
+}
+
+/* Section */
+
+
+.section {
+    padding: 50px 0 0 0;
+    background: url(images/backgrounds/1%20-%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg)
+    center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    border-top: 3px solid darkgrey;
+}
+
+.section_header {
+    width: 100%;
+    max-width: 850px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto 40px;
+    color: black;
+}
+
+.section_title {
+    font-size: 24px;
+}
+
+/* Economics */
+
+.economics {
+    width: 100%;
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.eco_list {
+    width: 36%;
+    margin-left: 55px;
+}
+
+.eco {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eco_items {
+    width: 100%;
+    border: solid 4px black;
+    border-radius: 10px;
+    position: relative;
+    height: 150px;
+}
+
+.eco_num {
+    text-align: left;
+    width: 13%;
+    height: 150px;
+    position: absolute;
+    color: black;
+    border-right: solid 4px black;
+
+}
+
+.num {
+    font-size: 45px;
+    padding: 40px 10px 25px 15px;
+}
+
+.eco_t {
+    width: 100%;
+    margin-left: 17%;
+    padding: 4px 10px 5px 0px;
+    height: auto;
+}
+
+.eco_label {
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.eco_text {
+    font-style: italic;
+    font-size: 17px;
+    padding-top: 8px;
+}
+
+.eco_text_1 {
+    font-size: 16px;
+}
+
+
+/* Windows 1 */
+
+.windows {
+    width: 70%;
+    display: flex;
+}
+
+.window_1 {
+    width: 79%;
+    border: 4px solid black;
+    border-radius: 31px;
+    margin: 0px 0 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.window_part1 {
+    width: 52%;
+
+}
+
+.windows_i {
+    width: 100%;
+    height: auto;
+}
+
+.windows_img {
+    max-width: 92%;
+    height: 443px;
+    padding-left: 12px;
+    padding-top: 15px;
+}
+
+.content {
+    text-align: center;
+    padding: 25px 0 0 25px;
+    border-right: solid 4px black;
+    height: 95%;
+}
+
+.windows_part2 {
+    width: 48%;
+}
+
+.win_name {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+    line-height: 1.1;
+}
+
+.win_work {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    padding-top: 5px;
+}
+
+.win_pro {
+    padding-top: 15px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.win_con {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    color: gray;
+}
+
+.win_text {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 16px;
+    color: gray;
+    line-height: 1.5;
+}
+
+strong {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hht:hover {
+    color: blue;
+    font-weight: 600;
+}
+
+.nam_book {
+    padding: 0 15px ;
+}
+
+span {
+    font-weight: 700;
+}
+
+.btn_b {
+    border: solid 2px grey;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn_b:hover {
+    color: white;
+    background-color: black;
+}
+
+.book_btn {
+    padding: 15px 20px 0 5px;;
+}
+
+.author_b {
+    padding-top: 10px;
+}
+
+.book_b {
+    padding-top: 15px;
+}
+
+.book_btn {
+    padding-top: 25px;
+}
+
+
+/* Order */
+
+.order {
+    text-align: center;
+    color: black;
+
+    margin-bottom: 50px;
+}
+
+.order_text{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+
+/* Copyright */
+
+.copyright {
+    padding: 20px 0;
+
+    border-top: 1px solid black;
+
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 12px;
+
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid #fafafa;
+    border-radius: 18px;
+    color: #fafafa;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    color: blue;
+    background-color: white;
+}
+
+.btt {
+    margin-top: 180px;
+}
+
+/* Sending Form */
+
+.bg_modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal_content {
+    width: 500px;
+    height: 300px;
+    background: url(images/backgrounds/eco.jpg);
+    border: solid 2px #c4c4c4;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+
+    position: relative;
+}
+
+.modal_close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 38px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    color: white;
+}
+
+.modal_label {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.modal_input {
+    width: 50%;
+    display: block;
+    padding: 8px;
+    font-style: italic;
+    font-size: 15px;
+    margin: 15px auto;
+}
+
+.btm {
+    margin-top: 35px;
+}
+
+.modal_btm {
+    width: 40%;
+    padding: 9px 25px;
+    height: 35px;
+    color: black;
+
+    background-color: white;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+
+    line-height: 1.1;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    transition: background-color .2s linear;
+}
+
+.modal_btm:hover {
+
+    color: black;
+    text-decoration: underline;
+}
+
+.modal_economics {
+    height: 280px;
+    width: 265px;
+}
+
+
+
+
+         /***********/
+        /* 1100px  */
+       /***********/
+
+@media (max-width: 1100px) {
+
+    .economics {
+        display: block;
+    }
+
+    .windows {
+        margin-top: 15px;
+    }
+
+    .eco_list {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .windows {
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+}
+
+         /***********/
+        /** 770px **/
+       /***********/
+
+@media (max-width: 770px) {
+
+    .window_1 {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .windows_img {
+        height: auto;
+    }
+
+    .content {
+        border-right: 0;
+        height: auto;
+        padding: 25px;
+    }
+
+    .window_part1 {
+        width: 100%;
+    }
+
+    .windows_part2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .windows_img {
+        height: 275px;
+    }
+
+    .eco_items {
+        margin: 15px 0;
+        height: auto;
+    }
+
+    .intro_title {
+        font-size: 38px;
+    }
+
+    .eco_num {
+        height: 100%;
+    }
+}
+
+         /***********/
+        /** 575px **/
+       /***********/
+
+@media (max-width: 575px) {
+
+    .eco_list {
+        width: 65%;
+    }
+
+    .eco_label {
+    font-size: 22px;
+    }
+
+    .win_text {
+        font-size: 20px;
+    }
+
+    .section_title2 {
+        font-size: 23px;
+    }
+
+    .header_logo {
+        font-size: 38px;
+    }
+
+    .header_logo2 {
+        font-size: 36px;
+    }
+
+    .intro_title {
+        font-size: 36px;
+    }
+
+    .intro_title2 {
+        font-size: 35px;
+    }
+
+    .intro_title3 {
+        font-size: 33px;
+    }
+
+    .win_name {
+        font-size: 24px;
+    }
+
+    .windows {
+        width: 80%;
+    }
+
+    .windows_img {
+        height: 260px;
+        padding: 0;
+    }
+
+    .content {
+        padding-bottom: 10px;
+    }
+
+    .intro_inside {
+        padding-top: 124px;
+    }
+
+    .btt {
+        margin-top: 80px;
+    }
+
+    .header_inside {
+        padding-top: 8px;
+    }
+
+    .nav_link {
+        padding-top: 4px;
+    }
+}
+
+         /***********/
+        /** 465px **/
+       /***********/
+
+@media (max-width: 465px) {
+
+    .eco_list {
+        width: 90%;
+    }
+
+    .windows {
+        width: 100%;
+    }
+
+    .header_logo {
+        font-size: 32px;
+    }
+
+    .header_logo2 {
+        font-size: 30px;
+    }
+
+    .intro_title {
+        font-size: 34px;
+    }
+
+    .intro_title2 {
+        font-size: 33px;
+    }
+
+    .intro_title3 {
+        font-size: 31px;
+    }
+
+    .intro_inside {
+        padding-top: 90px;
+    }
+
+    .eco_num {
+        width: 15%;
+    }
+
+    .num {
+        font-size: 32px;
+        padding-top: 48px;
+    }
+
+    .eco_t {
+        padding: 0 0 2px 12px;
+    }
+
+}
+
+         /***********/
+        /** 415px **/
+       /***********/
+
+@media (max-width: 415px) {
+
+    .eco_t {
+        padding: 0 6px 2px 12px;
+    }
+
+}
+
+         /***********/
+        /** 360px **/
+       /***********/
+
+@media (max-width: 360px) {
+
+    .intro_title {
+        font-size: 29px;
+    }
+
+    .intro_title2 {
+        font-size: 27px;
+    }
+
+    .intro_title3 {
+        font-size: 28px;
+    }
+
+    .header_logo {
+        font-size: 28px;
+    }
+
+    .header_logo2 {
+        font-size: 26px;
+    }
+
+    .win_text {
+        font-size: 18px;
+    }
+
+}
+
+         /***********/
+        /** 320px **/
+       /***********/
+
+@media (max-width: 320px) {
+
+    .eco_num {
+        width: 16%;
+    }
+
+    .intro_inside {
+        padding-top: 55px;
+    }
+
+    .btt {
+        margin-top: 60px;
+    }
+
+}
+
+
+
+
+
+
+

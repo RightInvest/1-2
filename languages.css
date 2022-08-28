@@ -1,0 +1,1072 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*: before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    margin: 0;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+
+    border: 0;
+    background-color: #0a0707;
+}
+
+ /* Container */
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding-top: 3px;
+    width: 100%;
+    background: rgb(0 0 0 / 92%);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header_logo {
+    font-size: 45px;
+    font-weight: 700;
+    color: #fafafa;
+    padding-left: 15px;
+}
+
+.header_logo2 {
+    font-size: 40px;
+}
+
+.header_inside {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+/* Nav */
+
+.nav {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-right: 20px;
+    height: 35px;
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+
+    color: #e6d3d3;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    display: none;
+    background-color: blue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav_link:hover {
+    color: blue;
+
+}
+
+.nav_link: {
+    color: transparent;
+}
+
+.nav_link:hover:after {
+    display: block;
+}
+
+li {
+    float: right;
+     list-style:none;
+}
+
+/* Lang */
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li {
+    float: right;
+    width: 50px;
+    height: 38px;
+    background-color: transparent;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li a {
+    display: block;
+    line-height: .5;
+}
+
+ul li ul li {
+    display: none;
+    background-color: rgb(0 0 0);
+    padding: 2px;
+}
+
+ul li:hover ul li {
+    display: block;
+}
+
+.translate {
+    background: transparent;
+    border: none;
+}
+
+.lang {
+    width: 30px;
+    height: 30px;
+}
+
+.lang_img{
+    width: 40px;
+    height: 30px;
+}
+
+.lang_img:hover {
+    width: 42px;
+    height: 32px;
+}
+
+
+
+
+ /* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url(images/backgrounds/english.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro_inside {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    color: black;
+    text-shadow: 2px 2px #cecece;
+}
+
+.intro_title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.intro_title2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.intro_title3 {
+    font-size: 34px;
+    margin-top: 30px;
+}
+
+/* Languages */
+
+.languages {
+    margin: 35px 0 125px 0;
+}
+
+.lang_content {
+    text-align: center;
+    padding: 0 8px;
+    color: black;
+    font-weight: 700;
+}
+
+.lang_ {
+    text-transform: capitalize;
+    font-size: 23px;
+    margin-bottom: 45px;
+}
+
+.btn-1 {
+    cursor: pointer;
+    margin: 0 25px;
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 18px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn-1:hover {
+    background-color:rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Section */
+
+
+.section {
+    padding: 50px 0 0 0;
+    background: url(images/backgrounds/Languages.png)
+    center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    border-top: 3px solid darkgrey;
+}
+.section_header {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto 40px;
+    color: black;
+}
+
+.section_title {
+    font-size: 24px;
+}
+
+
+/* Advantages */
+
+.advantages_title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.advantages_item {
+    width: 80%;
+    padding: 0 45px 0 100px;
+    position: relative;
+
+    margin-bottom: 45px;
+}
+
+.advantages_item:nth-child(5n)  {
+    margin-bottom: 30px;
+}
+
+.advantages_number {
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    margin-top: 35px;
+    z-index: 1;
+}
+
+.advantages_name {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+}
+
+.advantages_text {
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+}
+
+.advantages_text:before {
+    margin: 15px 0;
+
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: black;
+}
+
+/* Order */
+
+.order {
+    text-align: center;
+    color: black;
+
+    margin-bottom: 50px;
+}
+
+.order_text{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+/* Button */
+
+.btn {
+
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 18px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color:rgba(0, 0, 0, 0.40);
+    color: white;
+    border-color: black;
+}
+
+.btns {
+    padding-left: 35px;
+}
+
+.hover_eng:hover {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 73px 17px 135px 16px;
+    background: url(images/books/%D0%B0%D0%BD%D0%B3%D0%BB%20-%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png);
+    cursor: pointer;
+}
+
+.hover_rus:hover {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 73px 17px 135px 16px;
+    background: url(images/books/%D1%80%D1%83%D1%81%D1%81%20-%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png);
+    cursor: pointer;
+}
+
+.hover_tur:hover {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 73px 17px 135px 16px;
+    background: url(images/books/%D1%82%D1%83%D1%80%20-%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png);
+    cursor: pointer;
+}
+
+.hover_arab:hover {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 73px 22px 135px 22px;
+    background: url(images/books/%D0%B0%D1%80%20-%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png);
+    cursor: pointer;
+}
+
+.hover_ger:hover {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 73px 16px 135px 17px;
+    background: url(images/books/%D0%BD%D0%B5%D0%BC%20-%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png);
+    cursor: pointer;
+}
+
+.hover_span:hover {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 73px 20px 135px 20px;
+    background: url(images/books/%D0%B8%D1%81%D0%BF%20-%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png);
+    cursor: pointer;
+}
+
+/* Sending Form */
+
+.bg_modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal_content {
+    width: 500px;
+    height: 310px;
+    background-color: black;
+
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+
+    position: relative;
+}
+
+.modal_close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 38px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    color: white;
+}
+
+.modal_label {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.modal_input {
+    width: 50%;
+    display: block;
+    padding: 8px;
+    font-style: italic;
+    font-size: 15px;
+    margin: 15px auto;
+}
+
+.modal_langs {
+    font-size: 19px;
+    color: white;
+}
+
+.btm {
+    margin-top: 15px;
+}
+
+.modal_btm {
+    width: 40%;
+    padding: 9px 25px;
+    height: 35px;
+    color: black;
+
+    background-color: white;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+
+    line-height: 1.1;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    transition: background-color .2s linear;
+}
+
+.modal_btm:hover {
+
+    color: black;
+    text-decoration: underline;
+}
+
+/* Copyright */
+
+.copyright {
+    padding: 20px 0;
+
+    border-top: 1px solid black;
+
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+
+
+    /************* Media *************/
+
+         /***********/
+        /** 990px **/
+       /***********/
+
+
+@media (max-width: 990px) {
+
+    /* Header */
+
+    .header_logo {
+        font-size: 38px;
+    }
+
+    .header_logo2 {
+        font-size: 35px;
+    }
+
+
+    /* Intro */
+
+    .intro_inside {
+        width: 100%;
+        max-width: 640px;
+    }
+
+
+    .intro_title {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .intro_title2 {
+        font-size: 32px;
+    }
+
+    .intro_title3 {
+        font-size: 31px;
+        margin-top: 15px;
+    }
+
+    /* Section */
+
+    .section {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    .section_header {
+        margin-bottom: 35px;
+    }
+
+    .section_title {
+        font-size: 22px;
+    }
+
+    .section_title2 {
+        font-size: 20px;
+    }
+
+    /* Advantages */
+
+    .advantages_title {
+        font-size: 21px;
+        margin-bottom: 26px;
+    }
+
+    .advantages_item {
+        margin-bottom: 37px;
+    }
+
+    .advantages_number {
+        font-size: 22px;
+        left: 44px;
+    }
+
+    .advantages_name {
+        font-size: 13px;
+    }
+
+    .advantages_text:before {
+        margin: 10px 0;
+    }
+
+    .advantages_text {
+        font-size: 15px;
+    }
+
+    /* Order */
+
+    .order {
+        margin-bottom: 37px;
+    }
+
+    .order_text {
+        font-size: 20px;
+    }
+
+    /* Btn */
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+
+    .btn-1 {
+        margin: 0 25px 0 0;
+        font-size: 18px;
+    }
+
+    /* copyright */
+
+    .copyright {
+        padding-bottom: 10px;
+    }
+}
+
+         /***********/
+        /** 770px **/
+       /***********/
+
+
+@media (max-width: 770px) {
+
+    /* Header */
+
+    .header_logo {
+        font-size: 37px;
+    }
+
+    .header_logo2 {
+        font-size: 35px;
+    }
+
+    /* Intro */
+
+    .intro_inside {
+        width: 100%;
+        max-width: 420px;
+        margin-top: 30px;
+
+        color: white;
+        text-shadow: 1px 1px black;
+    }
+
+    .intro_title {
+        font-size: 29px;
+        margin-bottom: 5px;
+    }
+
+    .intro_title2 {
+        font-size: 28px;
+    }
+
+    .intro_title3 {
+        font-size: 25px;
+        margin-top: 7px;
+    }
+
+    /* Section */
+
+    .section {
+        padding-top: 28px;
+    }
+
+    .section_header {
+        margin-bottom: 23px;
+    }
+
+    .section_title {
+        font-size: 20px;
+    }
+
+    .section_title2 {
+        font-size: 19px;
+    }
+
+    /* Advantages */
+
+    .advantages_title {
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+
+    .advantages_item {
+        max-width: 450px;
+        padding: 0 45px 0 70px;
+        margin-bottom: 27px;
+    }
+
+    .advantages_number {
+        font-size: 18px;
+        left: 35px;
+    }
+
+    .advantages_name {
+        font-size: 12px;
+    }
+
+    .advantages_text {
+        font-size: 13px;
+    }
+
+    .advantages_text:before {
+        margin: 6px 0;
+        width: 50px;
+        height: 2px;
+    }
+
+    /* Order */
+
+    .order {
+        margin-bottom: 25px;
+    }
+
+    .order_text {
+        font-size: 16px;
+    }
+
+    /* Btm */
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .btn-1 {
+        font-size: 17px;
+        margin-top: 15px;
+    }
+
+    /* Languages */
+
+    .languages {
+        margin: 25px 0;
+    }
+
+    /* Copyright */
+
+    .copyright {
+        padding-bottom: 2px;
+    }
+
+}
+
+
+         /***********/
+        /** 575px **/
+       /***********/
+
+
+@media (max-width: 575px) {
+
+    /*Header*/
+
+    .header_logo {
+        font-size: 34px;
+    }
+
+    .header_logo2 {
+        font-size: 32px;
+    }
+
+    .lang {
+        padding-top: 3px;
+    }
+
+     /*Intro */
+
+    .intro_inside {
+        width: 100%;
+        max-width: 380px;
+        margin-top: 40px;
+
+    }
+
+    .intro_title {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .intro_title2 {
+        font-size: 28px;
+    }
+
+    .intro_title3 {
+        font-size: 29px;
+        margin-top: 7px;
+    }
+
+    /* Section */
+
+    .section_title {
+        font-size: 25px;
+    }
+
+    .section_title2 {
+        font-size: 23px;
+    }
+
+    /* Advantages */
+
+    .advantages_title {
+        font-size: 23px;
+        margin-bottom: 28px;
+    }
+
+    .advantages_item {
+        text-align: center;
+        padding: 0px 14px 0 50px;
+        margin-bottom: 45px;
+    }
+
+    .advantages_number {
+        font-size: 0;
+    }
+
+    .advantages_text:before {
+        margin: 15px auto;
+    }
+
+    .advantages_name {
+        font-size: 19px;
+    }
+
+    .advantages_text {
+        font-size: 20px;
+    }
+
+    .advantages_text:before {
+        margin: 15px auto;
+        width: 70px;
+        height: 3px;
+    }
+
+    /* Order */
+
+    .modal_content {
+        padding: 14px;
+    }
+
+    .modal_langs{
+        font-size: 15px;
+    }
+
+    .order_text {
+        font-size: 19px;
+    }
+
+    /* Btm */
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 17px;
+    }
+
+    /* Copyright */
+
+    .copyright {
+    font-size: 15px;
+    }
+}
+
+         /***********/
+        /** 380px **/
+       /***********/
+
+
+@media (max-width: 380px) {
+
+    .intro_inside {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .intro_title {
+        font-size: 29px;
+        margin-bottom: 0;
+    }
+
+    .intro_title2 {
+        font-size: 27px;
+        margin-top: 5px;
+        line-height: 1.3;
+    }
+
+    .intro_title3 {
+        font-size: 28px;
+        margin-top: 5px;
+    }
+
+    /* Advantages */
+
+    .advantages_item {
+        padding: 0px 14px 0 38px;
+    }
+
+    .advantages_item:nth-child(5n)  {
+        margin-bottom: 25px;
+    }
+
+    /* Btn */
+
+    .btn-1:nth-child( odd ) {
+        margin-right: 40px;
+    }
+
+    /* Lang */
+
+    .lang_ {
+        margin-bottom: 10px;
+        font-size: 21px;
+    }
+
+}
+
+         /***********/
+        /** 320px **/
+       /***********/
+
+
+@media (max-width: 320px) {
+
+    /*Header*/
+
+    .header_logo {
+        font-size: 29px;
+    }
+
+    .header_logo2 {
+        font-size: 27px;
+    }
+
+    /*Intro */
+
+    .intro_title {
+        font-size: 26px;
+    }
+
+    .intro_title2 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .intro_title3 {
+        font-size: 26px;
+    }
+
+    /* Section */
+
+    .section {
+        padding-top: 18px;
+    }
+
+    .section_header {
+        margin-bottom: 15px;
+    }
+
+    .section_title {
+        font-size: 20px;
+    }
+
+    .section_title2 {
+        font-size: 19px;
+    }
+
+    /* Advantages */
+
+    .advantages_title {
+        font-size: 19px;
+    }
+
+    .advantages_name {
+        font-size: 15px;
+    }
+
+    .advantages_text:before {
+        margin: 11px auto;
+        width: 58px;
+        height: 2px;
+    }
+
+    .advantages_item {
+        padding: 0px 0px 0 30px;
+    }
+
+    .advantages_text {
+        font-size: 16px;
+    }
+
+    /* Order */
+
+    .order_text {
+        font-size: 17px;
+    }
+
+    /* Btm */
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .btns {
+        padding-left: 20px;
+    }
+
+    .btn-1:nth-child( odd ) {
+        margin-right: 30px;
+    }
+
+    /* Lang */
+
+    .lang_ {
+        font-size: 20px;
+    }
+
+    /* Copyright */
+
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

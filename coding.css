@@ -1,0 +1,665 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*: before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    margin: 0;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    
+    border: 0;
+    background-color: #0a0707;
+}
+
+ /* Container */
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding-top: 3px;
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}  
+    
+.header_logo {
+    font-size: 45px;
+    font-weight: 700;
+    color: #fafafa;
+    padding-left: 15px;
+}
+
+.header_logo2 {
+    font-size: 40px;
+}
+
+.header_inside {
+    display: flex;
+    justify-content: space-between;
+     
+    align-items: center;
+}
+
+/* Nav */
+
+.nav {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-right: 20px;
+    height: 35px;
+}
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+    
+    color: #e6d3d3;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    display: none;
+    background-color: blue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1; 
+}
+
+.nav_link:hover {
+    color: blue;
+    
+}
+
+.nav_link: {
+    color: transparent;
+}
+
+.nav_link:hover:after {
+    display: block;
+}
+
+li {
+    float: right;
+     list-style:none;
+}
+
+/* Lang */
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li {
+    float: right;
+    width: 50px;
+    height: 38px;
+    background-color: transparent;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li a {
+    display: block;
+    line-height: .5;
+}
+
+ul li ul li {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.30);
+    padding: 2px;
+}
+
+ul li:hover ul li {
+    display: block;
+}
+
+.translate {
+    background: transparent;
+    border: none;
+}
+
+.lang {
+    width: 30px;
+    height: 30px;
+}
+
+.lang_img{
+    width: 40px;
+    height: 30px;
+}
+
+.lang_img:hover {
+    width: 42px;
+    height: 32px;
+}
+
+
+ /* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; 
+    
+    background-color: black;
+}
+
+.intro_inside {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.intro_title {
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.intro_title2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+ab {
+    color: blue;
+}
+
+
+.intro_title {
+    width: 100%;
+    max-width: 850px;
+    margin: 15px auto;
+    animation: type 3s steps(29);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid white;
+}
+@keyframes type {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 29ch;
+    }
+}
+
+.intro_title2 {
+    width: 100%;
+    max-width: 550px;
+    margin: 15px auto;
+    animation: type 3s steps(29);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid white;
+    
+}
+@keyframes type {
+    0%{
+        width: 0ch;
+    }
+    100%{
+        width: 29ch;
+    }
+}
+
+/* Section */
+
+
+.section {
+    padding: 50px 0 0 0;
+    background: url(images/backgrounds/1.jpg)
+    center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+
+.section_header {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto 40px;
+    color: white;
+}
+
+.section_title {
+    font-size: 24px;
+}
+
+/* Advantages */
+
+.advantages_title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.advantages_item {
+    width: 80%;
+    padding: 0 45px 0 100px;
+    position: relative;
+    
+    margin-bottom: 45px;
+}
+
+.advantages_number {
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    margin-top: 35px;
+    z-index: 1;
+}
+
+.advantages_name {
+    margin-bottom: 5px;
+    
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+
+.advantages_text {
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+}
+
+.advantages_text:before {
+    margin: 15px 0;
+    
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    
+    background-color: white;
+}
+
+/* Order */
+
+.order {
+    text-align: center;
+    color: white;
+    
+    margin-bottom: 50px;
+}
+
+.order_text{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+/* Button */
+
+._btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid #fafafa;
+    border-radius: 18px;
+    color: #fafafa;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    
+    transition: background .1s linear, color .1s linear;
+}
+
+._btn:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+
+/* Copyright */
+
+.copyright {
+    padding: 20px 0;
+    
+    border-top: 1px solid white;
+    
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+/* Order */
+
+.order {
+    text-align: center;
+    color: white;
+    
+    margin-bottom: 50px;
+}
+
+.order_text{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid #fafafa;
+    border-radius: 18px;
+    color: #fafafa;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+/* Sending Form */
+
+.bg_modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal_content {
+    width: 500px;
+    height: 300px;
+    background: url(images/backgrounds/bg_clients.jpg);
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    
+    position: relative;
+}
+
+.modal_close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 38px; 
+    transform: rotate(45deg);
+    cursor: pointer;
+    color: black;
+}
+
+.modal_label {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.modal_input {
+    width: 50%;
+    display: block;
+    padding: 8px;
+    font-style: italic;
+    font-size: 15px;
+    margin: 15px auto;
+}
+
+._btm {
+    margin-top: 35px;
+}
+
+.modal_btm {
+    width: 40%;
+    padding: 9px 25px;
+    height: 35px;
+    color: black;
+    
+    background-color: white;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    
+    line-height: 1.1;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+    
+    transition: background-color .2s linear;
+}
+
+.modal_btm:hover {
+    
+    color: black;
+    text-decoration: underline;
+}
+
+/* Copyright */
+
+.copyright {
+    padding: 20px 0;
+    
+    border-top: 1px solid white;
+    
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+
+
+         /***********/
+        /** 770px **/
+       /***********/
+
+@media (max-width: 770px){
+    .intro_title {
+        font-size: 40px;
+    }
+} 
+
+         /***********/
+        /** 575px **/
+       /***********/
+
+@media (max-width: 575px) {
+    
+    .header_logo {
+        font-size: 34px;
+    }
+    
+    .header_logo2 {
+        font-size: 31px;
+    }
+    
+    .intro_title {
+        font-size: 37px;
+        white-space:pre-line;
+        max-width: 560px;
+    }
+    
+    .intro_title2{
+        font-size: 34px;
+        white-space:pre-line;
+        max-width: 560px;
+    } 
+    
+    .advantages_item {
+        padding: 0 15px 0 25px;
+        width: 90%;
+    }
+    
+    .advantages_name {
+        font-size: 19px;
+        text-align: center;
+    }
+    
+    .advantages_text {
+        font-size: 19px;
+        text-align: center;
+    }
+    
+    .advantages_text:before {
+        margin: 12px auto;
+    }
+    
+    .advantages_number {
+        display: none;
+    }
+    
+    .order_text {
+        font-size: 22px;
+    }
+    
+    .section {
+        padding: 50px 0 0 0;
+    }
+} 
+
+
+         /***********/
+        /** 540px **/
+       /***********/
+
+@media (max-width: 540px) {
+    
+    .intro_title {
+        font-size: 37px;
+        white-space:pre-line;
+        max-width: 530px;
+    }
+    
+    .intro_title2{
+        font-size: 34px;
+        white-space:pre-line;
+        max-width: 530px;
+    }  
+}
+
+         /***********/
+        /** 414px **/
+       /***********/
+
+@media (max-width: 414px){
+    
+    .intro_title {
+        font-size: 37px;
+        white-space:pre-line;
+        max-width: 410px;
+    }
+    
+    .intro_title2{
+        font-size: 34px;
+        white-space:pre-line;
+        max-width: 410px;
+    }  
+}
+
+         /***********/
+        /** 375px **/
+       /***********/
+
+@media (max-width: 375px) {
+    
+    .intro_title {
+        font-size: 37px;
+        white-space:pre-line;
+        max-width: 365px;
+    }
+    
+    .intro_title2{
+        font-size: 34px;
+        white-space:pre-line;
+        max-width: 365px;
+    }  
+}
+
+         /***********/
+        /** 360px **/
+       /***********/
+
+@media (max-width: 375px) {
+
+    .intro_title {
+        font-size: 37px;
+        white-space:pre-line;
+        max-width: 350px;
+    }
+    
+    .intro_title2{
+        font-size: 34px;
+        white-space:pre-line;
+        max-width: 350px;
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
